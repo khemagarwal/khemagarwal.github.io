@@ -270,6 +270,7 @@ ctx.fillRect(0,0,150,75);
 	   
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(showPosition, showError);
+			alert(navigator.geolocation.getCurrentPosition(showPosition, showError));
 		} else {
 			x.innerHTML = "Geolocation is not supported by this browser.";
 		}
